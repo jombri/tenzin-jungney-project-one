@@ -1,0 +1,57 @@
+// Import Font Families
+/* @font-face {
+    font-family: 'Abril Fatface', cursive;
+    src: url();
+} */
+
+
+html {
+    font-size: 125%;
+}
+
+body {
+    font-family: $body-font;
+    color: $black;
+}
+
+h1, h2, h3, h4 {
+    font-family: $heading-font;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+h2, h3, h4 {
+    color: $black;
+}
+// Set Font Sizes 
+h1 {
+    color: $white-shade;
+    font-size: 4rem;
+    line-height: 1.6;
+}
+h2 {
+    font-size: 2.1rem;
+}
+h3 {
+    font-size: 1.6rem;
+}
+h4 {
+    font-size: 1.2rem;
+}
+
+ul,
+li,
+a,
+input {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}

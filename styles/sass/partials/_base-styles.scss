@@ -1,0 +1,32 @@
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.wrapper {
+    max-width: 1250px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.button {
+    background-color: $accent;
+    color: $black;
+    font-family: $heading-font;
+    font-size: 1rem;
+    border: none;
+    line-height: 1.6;
+    letter-spacing: 1px;
+    text-align: center;
+    transition: 0.3s;
+    &:hover, &:focus {
+        background-color: $black;
+        color: $accent;
+    }
+}
+.small-button {
+    padding: 15px 20px;
+}
+.big-button {
+    padding: 15px 25px;
+}

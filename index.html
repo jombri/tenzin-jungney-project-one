@@ -7,26 +7,23 @@
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@400;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/3e3f2f5719.js" crossorigin="anonymous"></script>
     <title>Willow</title>
 </head>
 <body>
     <!-- Skip Link -->
-    <a href="main-content" class="skip-link">Skip to main content.</a>
-    <!-- HEADER -->
-    <header>
+    <a href="#main-content" class="skip-link">Skip to main content.</a>
+    <!-- NAVIGATION -->
+    <nav class="nav-bar">
         <div class="wrapper">
-            <nav>
-                <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Willow</li>
-                    <li>Blog</li>
-                    <li>Contact</li>
-                </ul>
-            </nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li id="logo">Willow</li>
+                <li>Blog</li>
+                <li>Contact</li>
+            </ul>
             <!-- Slide Out Menu Button -->
             <input type="checkbox" id="open-menu">
             <label for="open-menu">
@@ -48,14 +45,17 @@
                     </ul>
                 </nav>
             </div>
-
-            <div>
-                <div>
-                    <h1>WILLOW</h1>
-                </div>
-                <div>
-                    <img src="./assets/home-image-1.jpg" alt="A young woman facing to her side with palm tree leaf in the background.">
-                </div>
+        </div>
+    </nav>
+    <!-- HEADER -->
+    <header>
+        <!-- HEADER WRAPPER FOR WILLOW & THE HEADER-IMAGE -->
+        <div class="wrapper">
+            <div class="text-container">
+                <h1>WILLOW</h1>
+            </div>
+            <div class="image-container">
+                <img src="./assets/home-image-1.jpg" alt="A young woman facing to her side with palm tree leaf in the background.">
             </div>
         </div>
     </header>
@@ -67,7 +67,7 @@
                 <h2>Who's willow?</h2>
                 <p>Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula ver ornare. Phasellus at sempre turpis. Nunc eu tellus tortor. Etiam at condimentum nisl, vitae sagittis orci. Donec id dignissim nunc. Donec dlit ante, eleifend a dolor et, venenatis facilisis dolor.</p>
             </div>
-            <a href="#">Find out more</a>
+            <a href="#" class="button big-button">Find out more</a>
         </section>
         <!-- Favourite & bucket list Section -->
         <section>
@@ -79,7 +79,7 @@
                     <div>
                         <h3>Favourite Things</h3>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In et risus nec orci ornare condimentum. Nam suscipit odio lorem, id vestibulum lacus tristique eu. Sed urna ex, porttitor nec iaculis at.</p>
-                        <a href="#">Read More</a>
+                        <a href="#" class="button small-button">Read More</a>
                     </div>
                 </div>
                 <div>
@@ -87,7 +87,7 @@
                         <h3>Bucket List</h3>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In et risus nec orci ornare condimentum. Nam
                             suscipit odio lorem, id vestibulum lacus tristique eu. Sed urna ex, porttitor nec iaculis at.</p>
-                        <a href="#">Read More</a>
+                        <a href="#" class="button small-button">Read More</a>
                     </div>
                 </div>
                 <div>
@@ -105,7 +105,7 @@
                     <div>
                         <h2>Willow's Journey</h2>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla pulvinar tortor nulla elementum eleifend. Vestibulum consequat vestibulum felis pharetra luctus. Quisque interdum orci quis convallis dapibus nulla pulvinar tortor. Lorem ipsum dolor sit amet, consectetur adpiscing elit. Nulla pulvinar tortor nulla elementum eleifend. Vestibulum consequat vestibulum felis pharetra luctus.</p>
-                        <a href="#"></a>
+                        <a href="#" class="button big-button"></a>
                     </div>
                 </div>
             </div>

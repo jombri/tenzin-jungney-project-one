@@ -1,0 +1,58 @@
+// Skip Link
+.skip-link {
+    position: absolute;
+    left: -1000px;
+    top: 5px;
+    background-color: $white-shade;
+    color: $black;
+    z-index: 10;
+
+    &:focus {
+        left: 0;
+    }
+}
+// NAV-BAR
+.nav-bar {
+    position: sticky;
+    top: 0;
+    background-color: $pine;
+
+    .wrapper {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    ul {
+        display: flex;
+        align-items: center;
+        column-gap: 30px;
+        font-family: $body-font;
+        color: $white-shade;
+        letter-spacing: 1px;
+        padding: 10px 0;
+    }
+
+    input[type=checkbox] {
+        opacity: 0;
+        position: absolute;
+    }
+
+    label {
+        position: absolute;
+        right: 0;
+        color: $white-shade;
+        font-size: 1.5rem;
+    }
+
+    #logo {
+        font-size: 2rem;
+        font-family: $heading-font;
+    }
+}
+
+// Slide Out Nav
+.slide-out-nav {
+    display: none;
+}

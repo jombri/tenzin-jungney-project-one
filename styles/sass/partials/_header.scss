@@ -1,0 +1,15 @@
+header {
+    background-color: $pine;
+    .wrapper {
+        display: flex;
+    }
+    .text-container {
+        flex-basis: 60%;
+    } 
+    h1 {
+        font-size: 6rem;
+    }
+    .image-container {
+        flex-basis: 40%;
+    }
+}

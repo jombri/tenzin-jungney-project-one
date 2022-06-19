@@ -278,3 +278,122 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.wrapper {
+  max-width: 1250px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.button {
+  background-color: rgb(228, 164, 54);
+  color: rgb(31, 31, 31);
+  font-family: "Abril Fatface", cursive;
+  font-size: 1rem;
+  border: none;
+  line-height: 1.6;
+  letter-spacing: 1px;
+  text-align: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.button:hover, .button:focus {
+  background-color: rgb(31, 31, 31);
+  color: rgb(228, 164, 54);
+}
+
+.small-button {
+  padding: 15px 20px;
+}
+
+.big-button {
+  padding: 15px 25px;
+}
+
+.skip-link {
+  position: absolute;
+  left: -1000px;
+  top: 5px;
+  background-color: rgb(246, 246, 246);
+  color: rgb(31, 31, 31);
+  z-index: 10;
+}
+.skip-link:focus {
+  left: 0;
+}
+
+.nav-bar {
+  position: sticky;
+  top: 0;
+  background-color: rgb(52, 82, 49);
+}
+.nav-bar .wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.nav-bar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(246, 246, 246);
+  letter-spacing: 1px;
+  padding: 10px 0;
+}
+.nav-bar input[type=checkbox] {
+  opacity: 0;
+  position: absolute;
+}
+.nav-bar label {
+  position: absolute;
+  right: 0;
+  color: rgb(246, 246, 246);
+  font-size: 1.5rem;
+}
+.nav-bar #logo {
+  font-size: 2rem;
+  font-family: "Abril Fatface", cursive;
+}
+
+.slide-out-nav {
+  display: none;
+}
+
+header {
+  background-color: rgb(52, 82, 49);
+}
+header .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+header .text-container {
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+}
+header h1 {
+  font-size: 6rem;
+}
+header .image-container {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+}

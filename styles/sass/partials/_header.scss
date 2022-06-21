@@ -2,13 +2,16 @@ header {
     background-color: $pine;
     .wrapper {
         display: flex;
+        column-gap: 20px;
     }
     .text-container {
         flex-basis: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
     } 
     h1 {
         font-size: 6rem;
-        
     }
     .image-container {
         flex-basis: 40%;

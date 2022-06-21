@@ -252,6 +252,7 @@ h1 {
 
 h2 {
   font-size: 2.1rem;
+  text-transform: uppercase;
 }
 
 h3 {
@@ -313,6 +314,10 @@ img {
 
 .big-button {
   padding: 15px 25px;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  margin: auto;
 }
 
 .skip-link {
@@ -431,10 +436,22 @@ header .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
 }
 header .text-container {
   -ms-flex-preferred-size: 60%;
       flex-basis: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 header h1 {
   font-size: 6rem;
@@ -442,4 +459,95 @@ header h1 {
 header .image-container {
   -ms-flex-preferred-size: 40%;
       flex-basis: 40%;
+}
+
+.about {
+  text-align: center;
+}
+.about .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.about .wrapper p {
+  margin: 40px 0px;
+}
+
+.favourite-bucket .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.favourite-bucket .wrapper > div {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.favourite-bucket,
+.gallery {
+  background-color: rgb(255, 255, 255);
+}
+
+.journey .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.journey .wrapper :first-child {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+}
+.journey .wrapper :last-child {
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.journey .wrapper :last-child a {
+  margin-left: 0;
+}
+
+.about,
+.journey {
+  background-color: rgb(246, 246, 246);
+  padding: 100px 0px;
+}
+
+.gallery-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 70px 0;
+}
+
+footer {
+  background-color: rgb(246, 246, 246);
+}
+footer .wrapper {
+  padding: 100px 0;
 }

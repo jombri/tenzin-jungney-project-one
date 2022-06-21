@@ -1,0 +1,68 @@
+// ABOUT
+.about {
+    text-align: center;
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        p {
+            margin: 40px 0px;
+        }
+    }
+}
+// FAVOURITE & BUCKET
+.favourite-bucket {
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        > div {
+            flex-basis: 50%;
+        }
+    }
+}
+.favourite-bucket,
+.gallery {
+    background-color: $white;
+}
+
+// JOURNEY
+.journey {
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        :first-child {
+            flex-basis: 25%;
+        }
+        :last-child {
+            flex-basis: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            a {
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+// ABOUT & JOURNEY
+.about,
+.journey {
+    background-color: $white-shade;
+    padding: 100px 0px;
+}
+// GALLERY
+.gallery-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 70px 0;
+}
+
+// FOOTER
+footer {
+    background-color: $white-shade;
+    .wrapper {
+        padding: 100px 0;
+    }
+}

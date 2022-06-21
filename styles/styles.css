@@ -360,6 +360,8 @@ img {
   -webkit-column-gap: 30px;
      -moz-column-gap: 30px;
           column-gap: 30px;
+}
+.nav-bar ul a {
   font-family: "Montserrat", sans-serif;
   color: rgb(246, 246, 246);
   letter-spacing: 1px;
@@ -380,7 +382,7 @@ img {
 .nav-bar label:hover {
   cursor: pointer;
 }
-.nav-bar #logo {
+.nav-bar .logo {
   font-size: 2rem;
   font-family: "Abril Fatface", cursive;
 }
@@ -550,4 +552,42 @@ footer {
 }
 footer .wrapper {
   padding: 100px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+footer .wrapper .footBox {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
+}
+footer .wrapper .footBox .icon-bg-color {
+  color: rgb(228, 164, 54);
+}
+footer .wrapper .footBox .icon-color {
+  color: rgb(31, 31, 31);
+}
+footer .copyright {
+  background-color: rgb(31, 31, 31);
+  color: rgb(246, 246, 246);
+}
+footer .copyright p {
+  margin: 0;
+  padding: 10px 0;
+  text-align: center;
 }

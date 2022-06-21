@@ -18,11 +18,21 @@
     <nav class="nav-bar">
         <div class="wrapper">
             <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li id="logo">Willow</li>
-                <li>Blog</li>
-                <li>Contact</li>
+                <li>
+                    <a href="./index.html">Home</a>
+                </li>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="./index.html" class="logo">Willow</a>
+                </li>
+                <li>
+                    <a href="./blog.html">Blog</a>
+                </li>
+                <li>
+                    <a href="./contact.html">Contact</a>
+                </li>
             </ul>
             <!-- Slide Out Menu Button -->
             <input type="checkbox" id="open-menu">
@@ -44,7 +54,7 @@
                         <li><a href="#">Home</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -99,7 +109,7 @@
             </div>
         </section>
         <!-- WILLOW'S JOURNEY Section -->
-        <section class="journey">
+        <section id="journey" class="journey">
             <div class="wrapper">
                 <div>
                     <img src="./assets/home-image-4.jpg" alt="A person in a yellow rain jacket facing away.">
@@ -130,17 +140,18 @@
     <footer>
         <div class="wrapper">
             <!-- PHOTOS -->
-            <div>
-                <div>
-                    <i class="fa-solid fa-image"></i>
-                </div>
+            <div class="footBox">
+                <span class="fa-stack">
+                    <i class="fa-solid fa-circle fa-stack-2x icon-bg-color"></i>
+                    <i class="fa-solid fa-image fa-stack-1x fa-inverse icon-color"></i>
+                </span>
                 <div>
                     <h3>Photos</h3>
                     <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit sem, sit amet imperdiet dolor placerat et.</p>
                 </div>
             </div>
             <!-- ABOUT -->
-            <div>
+            <div class="footBox">
                 <div>
                     <i class="fa-solid fa-user"></i>
                 </div>
@@ -151,7 +162,7 @@
                 </div>
             </div>
             <!-- BLOG -->
-            <div>
+            <div class="footBox">
                 <div>
                     <i class="fa-solid fa-display"></i>
                 </div>
@@ -162,21 +173,25 @@
                 </div>
             </div>
             <!-- CONTACT ME -->
-            <div>
-                <div>
-                    <i class="fa-solid fa-phone-flip"></i>
+            <div class="footBox">
+                <div> 
+                    <a href="./contact.html">
+                        <i class="fa-solid fa-phone-flip"></i>
+                    </a> 
                 </div>
                 <div>
-                    <h3>Contact Me</h3>
+                    <a href="./contact.html">
+                        <h3>Contact Me</h3>
+                    </a>
                     <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris
                         tempus velit sem, sit amet imperdiet dolor placerat et.</p>
                 </div>
             </div>
         </div>
-    <!-- COPYRIGHT -->
-    <div class="copyright">
-        <p>Copyright &copy; 2018 HackerYou</p>
-    </div>
+        <!-- COPYRIGHT -->
+        <div class="copyright">
+            <p>Copyright &copy; 2018 HackerYou</p>
+        </div>
     </footer>
 </body>
 </html>

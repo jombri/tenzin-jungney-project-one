@@ -248,6 +248,7 @@ h1 {
   color: rgb(246, 246, 246);
   font-size: 4rem;
   line-height: 1.6;
+  text-transform: uppercase;
 }
 
 h2 {
@@ -463,6 +464,24 @@ header .image-container {
       flex-basis: 40%;
 }
 
+.contact-header {
+  background-image: url(../assets/contact-image-1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  /* .wrapper {
+      height: inherit;
+      align-items: flex-end;
+  } */
+}
+
 .about {
   text-align: center;
 }
@@ -545,6 +564,13 @@ header .image-container {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 70px 0;
+}
+
+.contact {
+  background-color: rgb(246, 246, 246);
+}
+.contact .contact-box {
+  background-color: rgb(255, 255, 255);
 }
 
 footer {

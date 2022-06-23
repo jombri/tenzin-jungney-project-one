@@ -17,3 +17,18 @@ header {
         flex-basis: 40%;
     }
 }
+
+// CONTACT-HEADER
+.contact-header {
+    background-image: url(../assets/contact-image-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    align-items: flex-end;
+    /* .wrapper {
+        height: inherit;
+        align-items: flex-end;
+    } */
+}

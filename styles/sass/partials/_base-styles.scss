@@ -19,6 +19,7 @@ img {
     letter-spacing: 1px;
     text-align: center;
     transition: 0.3s;
+    text-transform: uppercase;
     &:hover, &:focus {
         background-color: $black;
         color: $accent;
@@ -31,4 +32,7 @@ img {
     padding: 15px 25px;
     max-width: fit-content;
     margin: auto;
+}
+.bottom-edge {
+    line-height: 0.75;
 }

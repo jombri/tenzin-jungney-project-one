@@ -6,29 +6,24 @@ footer {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-
+        row-gap: 40px;
         .footBox {
             flex-basis: 50%;
             display: flex;
             flex-direction: row;
             column-gap: 10px;
-
             .icon-bg-color {
                 color: $accent;
             }
-
             .icon-color {
                 color: $black;
             }
         }
     }
-
     .copyright {
         background-color: $black;
         color: $white-shade;
-
         p {
-            margin: 0;
             padding: 10px 0;
             text-align: center;
         }

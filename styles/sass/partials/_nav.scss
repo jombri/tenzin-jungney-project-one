@@ -26,9 +26,9 @@
         display: flex;
         align-items: center;
         column-gap: 30px;
+        color: $white-shade;
         a {
             font-family: $body-font;
-            color: $white-shade;
             letter-spacing: 1px;
         }
     }

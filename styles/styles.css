@@ -294,7 +294,15 @@ img {
   margin: 0 auto;
 }
 
+.nav-link-colour {
+  color: rgb(228, 164, 54);
+}
+
 .button {
+  padding: 10px;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
   background-color: rgb(228, 164, 54);
   color: rgb(31, 31, 31);
   font-family: "Abril Fatface", cursive;
@@ -306,24 +314,20 @@ img {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   text-transform: uppercase;
+  margin: 0 auto;
 }
 .button:hover, .button:focus {
   background-color: rgb(31, 31, 31);
   color: rgb(228, 164, 54);
 }
 
-.small-button {
-  padding: 15px 20px;
+/* .small-button {
+    max-width: 200px;
 }
-
 .big-button {
-  padding: 15px 25px;
-  max-width: -webkit-fit-content;
-  max-width: -moz-fit-content;
-  max-width: fit-content;
-  margin: auto;
-}
-
+    max-width: fit-content;
+    margin: auto;
+} */
 .bottom-edge {
   line-height: 0.75;
 }
@@ -368,10 +372,10 @@ img {
   -webkit-column-gap: 30px;
      -moz-column-gap: 30px;
           column-gap: 30px;
+  color: rgb(246, 246, 246);
 }
 .nav-bar ul a {
   font-family: "Montserrat", sans-serif;
-  color: rgb(246, 246, 246);
   letter-spacing: 1px;
 }
 .nav-bar input[type=checkbox] {
@@ -701,11 +705,13 @@ header .image-container {
   padding: 25px;
 }
 
-.contact {
+.contact,
+.blog-news {
   background-color: rgb(246, 246, 246);
   padding: 100px 0px;
 }
-.contact .wrapper {
+.contact .wrapper,
+.blog-news .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -713,11 +719,15 @@ header .image-container {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.contact .contact-box {
+.contact .contact-box,
+.blog-news .contact-box {
   background-color: rgb(255, 255, 255);
   -ms-flex-preferred-size: 30%;
       flex-basis: 30%;
   width: inherit;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   padding: 30px 40px 30px 25px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -727,7 +737,8 @@ header .image-container {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.contact .contact-box .social-icons {
+.contact .contact-box .social-icons,
+.blog-news .contact-box .social-icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -738,38 +749,67 @@ header .image-container {
   margin-bottom: 30px;
   color: rgb(52, 82, 49);
 }
-.contact .contact-box .email {
+.contact .contact-box .email,
+.blog-news .contact-box .email {
   margin-bottom: 25px;
 }
-.contact .phone-address {
+.contact .phone-address,
+.blog-news .phone-address {
   /* height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between; */
 }
-.contact .phone-address p {
+.contact .phone-address p,
+.blog-news .phone-address p {
   margin-bottom: 0;
 }
-.contact form {
+.contact form,
+.blog-news form {
   -ms-flex-preferred-size: 67%;
       flex-basis: 67%;
   width: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 20px;
 }
-.contact form fieldset > input {
-  width: 49%;
+.contact form .form-button,
+.blog-news form .form-button {
+  margin: 0;
+  max-width: 100%;
 }
-.contact button {
-  display: block;
+.contact fieldset,
+.blog-news fieldset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: none;
 }
-.contact button, .contact textarea {
-  width: inherit;
+.contact fieldset > input,
+.blog-news fieldset > input {
+  width: calc(50% - 5px);
+  height: 48px;
+  padding: 0 20px;
 }
-
-input,
-textarea {
+.contact input,
+.contact textarea,
+.blog-news input,
+.blog-news textarea {
   border: none;
   font-family: "Montserrat", sans-serif;
-  color: #333;
+  color: rgb(31, 31, 31);
+}
+.contact textarea,
+.blog-news textarea {
+  padding: 20px;
 }
 
 footer {
@@ -815,4 +855,5 @@ footer .copyright {
 footer .copyright p {
   padding: 10px 0;
   text-align: center;
+  margin-bottom: 0;
 }

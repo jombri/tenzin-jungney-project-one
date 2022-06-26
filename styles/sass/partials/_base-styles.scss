@@ -9,7 +9,13 @@ img {
     margin: 0 auto;
 }
 
+.nav-link-colour {
+    color: $accent;
+}
+
 .button {
+    padding: 10px;
+    max-width: fit-content;
     background-color: $accent;
     color: $black;
     font-family: $heading-font;
@@ -20,19 +26,19 @@ img {
     text-align: center;
     transition: 0.3s;
     text-transform: uppercase;
+    margin: 0 auto;
     &:hover, &:focus {
         background-color: $black;
         color: $accent;
     }
 }
-.small-button {
-    padding: 15px 20px;
+/* .small-button {
+    max-width: 200px;
 }
 .big-button {
-    padding: 15px 25px;
     max-width: fit-content;
     margin: auto;
-}
+} */
 .bottom-edge {
     line-height: 0.75;
 }

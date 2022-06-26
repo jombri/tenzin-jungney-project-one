@@ -1,4 +1,5 @@
-.contact {
+.contact,
+.blog-news {
     background-color: $white-shade;
     padding: 100px 0px;
     .wrapper {
@@ -9,6 +10,7 @@
         background-color: $white;
         flex-basis: 30%;
         width: inherit;
+        height: fit-content;
         padding: 30px 40px 30px 25px;
         display: flex;
         flex-direction: column;
@@ -32,25 +34,43 @@
             margin-bottom: 0;
         }
     }
-
+    
     form {
         flex-basis: 67%;
         width: inherit;
-        fieldset > input {
-            width: 49%;
-        }
-    }
-    button {
-        display: block;
-    }
-    button, textarea {
-        width: inherit;
-    }
-}
-input,
-textarea {
-    border: none;
-    font-family: $body-font;
-    color: #333;
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        .form-button {
+            margin: 0;
+            max-width: 100%;
 
+    }
+    }
+    fieldset {
+        display: flex;
+        justify-content: space-between;
+        border: none;
+        > input {
+            width: calc(50% - 5px);
+            height: 48px;
+            padding: 0 20px;
+        }
+    } 
+    
+   
+    // button, textarea {
+    //     width: inherit;
+    // }
+    
+    input,
+    textarea {
+        border: none;
+        font-family: $body-font;
+        color: $black;
+    }
+    textarea {
+        padding: 20px;
+    }
 }
+

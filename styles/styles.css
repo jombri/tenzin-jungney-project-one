@@ -479,10 +479,12 @@ header .text-container {
   position: relative;
 }
 header .text-container .text-circle {
-  position: absolute;
-  top: 35%;
-  left: 20%;
+  /*  position: absolute;
+   top: 35%;
+   left: 20%; */
   max-width: 50%;
+  margin-right: -10%;
+  margin-top: -8%;
 }
 header h1 {
   font-size: 6rem;
@@ -490,6 +492,10 @@ header h1 {
 header .image-container {
   -ms-flex-preferred-size: 40%;
       flex-basis: 40%;
+  -webkit-transform: translate(0px, 50px);
+          transform: translate(0px, 50px);
+  -webkit-box-shadow: 15px 15px rgb(255, 255, 255);
+          box-shadow: 15px 15px rgb(255, 255, 255);
 }
 
 .contact-header {
@@ -561,6 +567,16 @@ header .image-container {
 .favourite-bucket .wrapper > div {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
+}
+.favourite-bucket .home-image-2 {
+  -webkit-transform: translate(0, -30px);
+          transform: translate(0, -30px);
+}
+.favourite-bucket .home-image-2::after {
+  -webkit-box-shadow: 15px 15px rgb(112, 155, 107);
+          box-shadow: 15px 15px rgb(112, 155, 107);
+  -webkit-transform: translate(15px, -15px);
+          transform: translate(15px, -15px);
 }
 
 .favourite-bucket,

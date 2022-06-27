@@ -19,6 +19,13 @@
             flex-basis: 50%;
         }
     }
+    .home-image-2 {
+        transform: translate(0, -30px);
+    }
+    .home-image-2::after {
+        box-shadow: 15px 15px $green-grey;
+        transform: translate(15px, -15px);
+    }
 }
 .favourite-bucket,
 .gallery {
@@ -60,7 +67,8 @@
         margin-bottom: 20px;
     }
 }
-// BLOG & NEWS - MAIN
+
+// BLOG & NEWS PAGE- MAIN
 .blog-news {
     background-color: $white-shade;
     padding: 100px 0px;
@@ -98,7 +106,6 @@
             }
         }
     }
-
     .blog {
         flex-basis: 68%;
         display: flex;

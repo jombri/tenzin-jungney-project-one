@@ -55,8 +55,11 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 70px 0;
+    li {
+        flex-basis: 32%;
+        margin-bottom: 20px;
+    }
 }
-
 // BLOG & NEWS - MAIN
 .blog-news {
     background-color: $white-shade;

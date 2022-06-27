@@ -445,6 +445,16 @@ img {
 
 header {
   background-color: rgb(52, 82, 49);
+  /*  .text-container::before {
+       content: '';
+       width: 100%;
+       height: 150px;
+       background-image: url(../assets/circle-text.png);
+       background-size: 100% 100%;
+       // background-color: $white-shade;
+       display: block;
+       background-repeat: no-repeat;
+   } */
 }
 header .wrapper {
   display: -webkit-box;
@@ -466,18 +476,16 @@ header .text-container {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  position: relative;
+}
+header .text-container .text-circle {
+  position: absolute;
+  top: 35%;
+  left: 20%;
+  max-width: 50%;
 }
 header h1 {
   font-size: 6rem;
-}
-header .text-container::before {
-  content: "";
-  width: 100%;
-  height: 150px;
-  background-image: url(../assets/circle-text.png);
-  background-size: 100% 100%;
-  display: block;
-  background-repeat: no-repeat;
 }
 header .image-container {
   -ms-flex-preferred-size: 40%;
@@ -606,6 +614,11 @@ header .image-container {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 70px 0;
+}
+.gallery-list li {
+  -ms-flex-preferred-size: 32%;
+      flex-basis: 32%;
+  margin-bottom: 20px;
 }
 
 .blog-news {
@@ -828,7 +841,7 @@ footer .wrapper {
       flex-wrap: wrap;
   row-gap: 40px;
 }
-footer .wrapper .footBox {
+footer .footBox {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
   display: -webkit-box;
@@ -841,12 +854,50 @@ footer .wrapper .footBox {
   -webkit-column-gap: 10px;
      -moz-column-gap: 10px;
           column-gap: 10px;
+  /*  p {
+       padding-left: 50px;
+   } */
 }
-footer .wrapper .footBox .icon-bg-color {
+footer .footBox h3 {
+  position: relative;
+}
+footer .footBox h3::before {
+  font-style: normal;
+  font-variant: normal;
+  font-size: 2.5rem;
+  width: 40px;
+  height: 40px;
+  background-color: rgb(228, 164, 54);
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  left: 0;
+}
+footer .footBox .icon-bg-color {
   color: rgb(228, 164, 54);
 }
-footer .wrapper .footBox .icon-color {
+footer .footBox .icon-color {
   color: rgb(31, 31, 31);
+}
+footer .item-1::before {
+  content: "f03e";
+}
+footer .item-2::before {
+  content: "f007";
+}
+footer .item-3::before {
+  content: "e163";
+}
+footer .item-4::before {
+  content: "f879";
 }
 footer .copyright {
   background-color: rgb(31, 31, 31);

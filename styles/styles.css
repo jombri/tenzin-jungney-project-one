@@ -348,6 +348,7 @@ img {
   position: sticky;
   top: 0;
   background-color: rgb(52, 82, 49);
+  z-index: 10;
 }
 .nav-bar .wrapper {
   position: relative;
@@ -573,10 +574,15 @@ header .image-container {
           transform: translate(0, -30px);
 }
 .favourite-bucket .home-image-2::after {
-  -webkit-box-shadow: 15px 15px rgb(112, 155, 107);
-          box-shadow: 15px 15px rgb(112, 155, 107);
-  -webkit-transform: translate(15px, -15px);
-          transform: translate(15px, -15px);
+  content: "";
+  width: inherit;
+  height: inherit;
+  display: block;
+  position: relative;
+  background-color: rgb(112, 155, 107);
+  -webkit-transform: translate(-1000px, 15px);
+          transform: translate(-1000px, 15px);
+  z-index: -10;
 }
 
 .favourite-bucket,
@@ -595,6 +601,8 @@ header .image-container {
 .journey .wrapper :first-child {
   -ms-flex-preferred-size: 25%;
       flex-basis: 25%;
+  -webkit-box-shadow: 5px 5px rgb(112, 155, 107);
+          box-shadow: 5px 5px rgb(112, 155, 107);
 }
 .journey .wrapper :last-child {
   -ms-flex-preferred-size: 70%;
@@ -757,7 +765,7 @@ header .image-container {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  padding: 30px 40px 30px 25px;
+  padding: 30px 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -923,4 +931,28 @@ footer .copyright p {
   padding: 10px 0;
   text-align: center;
   margin-bottom: 0;
+}
+
+@media (max-width: 890px) {
+  .contact .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+
+  .contact .contact-box {
+    width: 100%;
+    text-align: center;
+  }
+  .contact .contact-box .social-icons {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .contact form {
+    width: 100%;
+    margin-bottom: 30px;
+  }
 }

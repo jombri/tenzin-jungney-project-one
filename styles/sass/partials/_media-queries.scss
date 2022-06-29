@@ -1,0 +1,19 @@
+
+
+@media (max-width: 890px) {
+    // CONTACT PAGE
+    .contact .wrapper {
+        flex-direction: column-reverse;
+    }
+    .contact .contact-box {
+        width: 100%;
+        text-align: center;
+        .social-icons {
+            justify-content: center;
+        }
+    }
+    .contact form {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}

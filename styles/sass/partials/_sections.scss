@@ -23,8 +23,15 @@
         transform: translate(0, -30px);
     }
     .home-image-2::after {
-        box-shadow: 15px 15px $green-grey;
-        transform: translate(15px, -15px);
+        content: "";
+        width: inherit;
+        height: inherit;
+        display: block;
+        position: relative;
+        // box-shadow: 15px 15px $green-grey;
+        background-color: $green-grey;
+        transform: translate(-1000px, 15px);
+        z-index: -10;
     }
 }
 .favourite-bucket,
@@ -38,6 +45,7 @@
         justify-content: space-between;
         :first-child {
             flex-basis: 25%;
+            box-shadow: 5px 5px $green-grey;
         }
         :last-child {
             flex-basis: 70%;

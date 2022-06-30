@@ -1,6 +1,18 @@
 
 // Screen size between 675px - 940px
 @media (max-width: 940px) {
+    // HOME PAGE
+    .gallery-list {
+        justify-content: space-between;
+        li {
+            flex-basis: calc( (100% / 2 ) - 25px);
+            // flex-grow: 1;
+        //    column-gap: 25px;
+            margin-bottom: 25px;
+        }
+    } 
+
+
     // CONTACT PAGE
     .contact-header h1 {
         font-size: 4rem;
@@ -19,6 +31,7 @@
         width: 100%;
         margin-bottom: 30px;
     }
+
     // BLOG & NEWS PAGE
     .blog-header h1 {
         font-size: 4rem;
@@ -45,11 +58,31 @@
         .nav-links {
        height: 0;
        overflow: hidden;
+       .logo {
+        position: absolute;
+        left: 0;
+        top: 0;
+       }
        /* .logo {
         height: 80px;
         font-size: 2rem;
        } */
     } 
+    }
+
+    // HOME PAGE
+    .gallery-list {
+        justify-content: space-between;
+
+        li {
+            flex-basis: 100%;
+            // flex-grow: 1;
+            //    column-gap: 25px;
+            margin-bottom: 25px;
+            img {
+                width: 100%;
+            }
+        }
     }
 
     .blog-header h1,

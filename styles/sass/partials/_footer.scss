@@ -8,59 +8,19 @@ footer {
         flex-wrap: wrap;
         row-gap: 40px;
     }
-    .footbox {
-        flex-basis: 50%;
-        display: flex;
-        flex-direction: row;
-        column-gap: 20px;
-        h3 {
-            position: relative;
-            // padding-left: 50px;
-/* 
-            &::before {
-                // FontAwesome settings
-                font-style: normal;
-                font-variant: normal;
-                // text-rendering: auto;
-                // -webkit-font-smoothing: antialiased;
-                font-size: 2.5rem;
-                font-family: 'Font Awesome 6 Free';
-                // Background
-                width: 40px;
-                height: 40px;
-                background-color: $accent;
-                border-radius: 50%;
-                // Align center to the circle background
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                // Left side positioning
-                position: absolute;
-                left: 0;
-            } */
-        }
-       /*  p {
-            padding-left: 50px;
-        } */
-        .icon-bg-color {
-            color: $accent;
-        }
-        .icon-color {
-            color: $black;
-        }
+    
+    .icon-1::before {
+        content: '\f03e';
     }
-  /*   .item-1::before {
-        content: 'f03e';
+    .icon-2::before {
+        content: '\f007';
     }
-    .item-2::before {
-        content: 'f007';
+    .icon-3::before {
+        content: '\e163';
     }
-    .item-3::before {
-        content: 'e163';
+    .icon-4::before {
+        content: '\f879';
     }
-    .item-4::before {
-        content: 'f879';
-    } */
     .copyright {
         background-color: $black;
         color: $white-shade;
@@ -69,5 +29,49 @@ footer {
             text-align: center;
             margin-bottom: 0;
         }
+    }
+}
+
+.footbox {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+    h3 {
+        position: relative;
+        padding-left: 115px;
+
+        &::before {
+            // FontAwesome settings
+            font-style: normal;
+            font-variant: normal;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            font-size: 1.5rem;
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            // Background
+            width: 80px;
+            height: 80px;
+            background-color: $accent;
+            border-radius: 50%;
+            // Align center to the circle background
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            // Left side positioning
+            position: absolute;
+            left: 0;
+            top: -10px;
+        }
+    }
+    p {
+        padding-left: 115px;
+    }
+    .icon-bg-color {
+        color: $accent;
+    }
+    .icon-color {
+        color: $black;
     }
 }

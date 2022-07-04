@@ -1,6 +1,72 @@
+// Screen size 1140px
+@media (max-width: 1140px) {
+    .text-container {
+        .text-circle {
+            width: 20%;
+        }
+        h1 {
+            font-size: 5rem;
+        }
+    }
+}
 
+@media (max-width: 760px) {
+    // HOME PAGE HEADER
+    header .wrapper {
+        flex-direction: column;
+        align-items: center;
+        .text-container {
+            flex-basis: 100%;
+            justify-content: flex-start;
+            .text-circle {
+                margin-top: 0;
+            }
+            h1 {
+            font-size: 3rem;
+            }
+        }
+        .image-container {
+            max-width: 100%;
+        }
+    }
+    // FAVOURITE BUCKET SECTION
+    .favourite-bucket .wrapper {
+        flex-direction: column;
+        text-align: center;
+        .home-image-2 {
+            transform: translate(0);
+        }
+        img {
+            width: 100%;
+        }
+    }
+    // JOURNEY SECTION
+    .journey {
+        .wrapper {
+        flex-direction: column;
+        text-align: center;
+        div:first-child {
+            max-width: max-content;
+            margin: 0 auto 50px;
+            }
+        div:last-child a {
+            margin: auto;
+            }
+        }
+    }
+        
+    // FOOTER
+    footer .wrapper {
+        flex-direction: column;
+    }
+}
 // Screen size between 675px - 940px
 @media (max-width: 940px) {
+    // Header font-size
+    .text-container h1 {
+        font-size: 4rem;
+    }
+
     // HOME PAGE
     .gallery-list {
         justify-content: space-between;

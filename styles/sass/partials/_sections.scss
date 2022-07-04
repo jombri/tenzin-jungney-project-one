@@ -12,26 +12,32 @@
 }
 // FAVOURITE & BUCKET
 .favourite-bucket {
+    position: relative;
     .wrapper {
         display: flex;
         flex-wrap: wrap;
         > div {
             flex-basis: 50%;
+            margin-bottom: 50px;
+            &:last-child {
+                margin-bottom: 0;
+            }
         }
+        
     }
     .home-image-2 {
         transform: translate(0, -30px);
-    }
-    .home-image-2::after {
-        content: "";
-        width: inherit;
-        height: inherit;
-        display: block;
-        position: relative;
-        // box-shadow: 15px 15px $green-grey;
-        background-color: $green-grey;
-        transform: translate(-1000px, 15px);
-        z-index: -10;
+        &::after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            display: block;
+            position: absolute;
+            // box-shadow: 15px 15px $green-grey;
+            background-color: $green-grey;
+            transform: translate(-800px, 15px);
+            z-index: -10;
+        }
     }
 }
 .favourite-bucket,
@@ -42,6 +48,7 @@
 .journey {
     .wrapper {
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
         column-gap: 5%;
         div:first-child {

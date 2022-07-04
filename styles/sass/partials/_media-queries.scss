@@ -12,7 +12,7 @@
 
 @media (max-width: 760px) {
     // HOME PAGE HEADER
-    header .wrapper {
+    .home-header .wrapper {
         flex-direction: column;
         align-items: center;
         .text-container {
@@ -150,6 +150,12 @@
             }
         }
     }
+    // BLOG & NEWS PAGE | CONTACT PAGE
+   /*  .blog-header .wrapper,
+    .contact-header .wrapper {
+        align-items: flex-start;
+        justify-content: flex-end;
+    } */
 
     .blog-header h1,
     .contact-header h1 {

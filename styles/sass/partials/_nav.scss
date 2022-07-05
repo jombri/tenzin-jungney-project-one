@@ -45,6 +45,8 @@
         right: 0;
         color: $white-shade;
         font-size: 1.5rem;
+        height: 0;
+        overflow: hidden;
         &:hover {
             cursor: pointer;
         }

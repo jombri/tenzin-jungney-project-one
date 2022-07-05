@@ -26,10 +26,6 @@
         }
     }
     .phone-address {
-        /* height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between; */
         p {
             margin-bottom: 0;
         }
@@ -44,9 +40,9 @@
         .form-button {
             margin: 0;
             max-width: 100%;
+        }
+    }
 
-    }
-    }
     fieldset {
         display: flex;
         justify-content: space-between;
@@ -57,18 +53,14 @@
             padding: 0 20px;
         }
     } 
-    
-   
-    // button, textarea {
-    //     width: inherit;
-    // }
-    
+
     input,
     textarea {
         border: none;
         font-family: $body-font;
         color: $black;
     }
+
     textarea {
         padding: 20px;
     }

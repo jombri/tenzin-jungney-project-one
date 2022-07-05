@@ -10,74 +10,20 @@
     }
 }
 
-@media (max-width: 760px) {
-    // HOME PAGE HEADER
-    .home-header .wrapper {
-        flex-direction: column;
-        align-items: center;
-        .text-container {
-            flex-basis: 100%;
-            justify-content: flex-start;
-            .text-circle {
-                margin-top: 0;
-            }
-            h1 {
-            font-size: 3rem;
-            }
-        }
-        .image-container {
-            max-width: 100%;
-        }
-    }
-    // FAVOURITE BUCKET SECTION
-    .favourite-bucket .wrapper {
-        flex-direction: column;
-        text-align: center;
-        .home-image-2 {
-            transform: translate(0);
-        }
-        img {
-            width: 100%;
-        }
-    }
-    // JOURNEY SECTION
-    .journey {
-        .wrapper {
-        flex-direction: column;
-        text-align: center;
-        div:first-child {
-            max-width: max-content;
-            margin: 0 auto 50px;
-            }
-        div:last-child a {
-            margin: auto;
-            }
-        }
-    }
-        
-    // FOOTER
-    footer .wrapper {
-        flex-direction: column;
-    }
-}
 // Screen size between 675px - 940px
 @media (max-width: 940px) {
     // Header font-size
     .text-container h1 {
         font-size: 4rem;
     }
-
     // HOME PAGE
     .gallery-list {
         justify-content: space-between;
         li {
             flex-basis: calc( (100% / 2 ) - 25px);
-            // flex-grow: 1;
-        //    column-gap: 25px;
             margin-bottom: 25px;
         }
     } 
-
 
     // CONTACT PAGE
     .contact-header h1 {
@@ -117,46 +63,93 @@
         }
     }
 }
+
+@media (max-width: 760px) {
+    // HOME PAGE HEADER
+    .home-header .wrapper {
+        flex-direction: column;
+        align-items: center;
+        .text-container {
+            flex-basis: 100%;
+            justify-content: flex-start;
+            .text-circle {
+                margin-top: 0;
+            }
+            h1 {
+            font-size: 3rem;
+            }
+        }
+        .image-container {
+            max-width: 100%;
+        }
+    }
+    // FAVOURITE BUCKET SECTION
+    .favourite-bucket .wrapper {
+        flex-direction: column;
+        text-align: center;
+        .favourite-textbox {
+            padding: 0;
+        }
+        .bucket-textbox {
+            padding: 0;
+            text-align-last: center;
+        }
+        img {
+            width: 100%;
+        }
+    }
+    // JOURNEY SECTION
+    .journey {
+        .wrapper {
+        flex-direction: column;
+        text-align: center;
+        div:first-child {
+            max-width: max-content;
+            margin: 0 auto 50px;
+            }
+        div:last-child a {
+            margin: auto;
+            }
+        }
+    }
+        
+    // FOOTER
+    footer .wrapper {
+        flex-direction: column;
+    }
+}
 // Screensize at 675px
 @media (max-width: 675px) {
     .nav-bar .wrapper {
         height: 80px;
         .nav-links {
-       height: 0;
-       overflow: hidden;
-       .logo {
-        position: absolute;
-        left: 0;
-        top: 0;
-       }
-       /* .logo {
-        height: 80px;
-        font-size: 2rem;
-       } */
-    } 
+            height: 0;
+            overflow: hidden;
+            .logo {
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+        }
+        label {
+            height: auto;
+            overflow: visible;
+        } 
     }
-
     // HOME PAGE
     .gallery-list {
         justify-content: space-between;
 
         li {
             flex-basis: 100%;
-            // flex-grow: 1;
-            //    column-gap: 25px;
             margin-bottom: 25px;
             img {
                 width: 100%;
             }
         }
     }
-    // BLOG & NEWS PAGE | CONTACT PAGE
-   /*  .blog-header .wrapper,
-    .contact-header .wrapper {
-        align-items: flex-start;
-        justify-content: flex-end;
-    } */
 
+    // BLOG & NEWS PAGE | CONTACT PAGE
     .blog-header h1,
     .contact-header h1 {
         font-size: 2rem;

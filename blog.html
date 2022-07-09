@@ -12,7 +12,7 @@
     <script src="https://kit.fontawesome.com/3e3f2f5719.js" crossorigin="anonymous"></script>
     <title>Blog & News</title>
 </head>
-<body>
+<body> 
     <!-- Skip Link -->
     <a href="#main-content" class="skip-link">Skip to main content.</a>
     <!-- NAVIGATION -->
@@ -36,24 +36,21 @@
                 </li>
             </ul>
             <!-- Slide Out Menu Button -->
-            <input type="checkbox" id="open-menu">
-            <label for="open-menu">
+            <button class="menu-toggle toggle-look">
                 <i class="fa-solid fa-bars"></i>
-            </label>
+            </button>
             <!-- Slide Out Nav Content -->
             <div class="slide-out-nav">
                 <!-- Menu Content -->
                 <nav>
                     <!-- Menu Close Button -->
-                    <div class="close-button">
-                        <label for="open-menu">
-                            <i class="fa-solid fa-xmark"></i>
-                        </label>
-                    </div>
+                    <button class="close-button toggle-look">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
                     <!-- Menu -->
                     <ul class="slide-menu">
                         <li><a href="./index.html">Home</a></li>
-                        <li><a href="/blog.html#about">About</a></li>
+                        <li><a href="./blog.html#about">About</a></li>
                         <li><a href="./blog.html">Blog</a></li>
                         <li><a href="./contact.html">Contact</a></li>
                     </ul>
@@ -178,5 +175,7 @@
             <p>Copyright &copy; 2018 HackerYou</p>
         </div>
     </footer>
+    <!-- javaScript -->
+    <script src="script.js"></script>
 </body>
 </html>

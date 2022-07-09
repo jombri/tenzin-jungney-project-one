@@ -372,22 +372,17 @@ img {
   font-family: "Montserrat", sans-serif;
   letter-spacing: 1px;
 }
-.nav-bar input[type=checkbox] {
-  opacity: 0;
-  position: absolute;
-}
-.nav-bar input[type=checkbox]:checked ~ .slide-out-nav {
-  right: 0;
-}
-.nav-bar label {
-  position: absolute;
-  right: 0;
-  color: rgb(246, 246, 246);
-  font-size: 1.5rem;
+.nav-bar .menu-toggle {
   height: 0;
   overflow: hidden;
 }
-.nav-bar label:hover {
+.nav-bar .toggle-look {
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  right: 0;
   cursor: pointer;
 }
 .nav-bar .logo {
@@ -397,28 +392,25 @@ img {
 
 .slide-out-nav {
   background-color: rgb(112, 155, 107);
-  height: 100vh;
   position: fixed;
   top: 0;
-  right: -506px;
+  right: 0;
   width: 100%;
-  max-width: 506px;
+  max-width: 675px;
+  height: 100vh;
   padding: 35px 50px;
   -webkit-transition: 0.75s;
   transition: 0.75s;
+  -webkit-transform: translate(100%);
+          transform: translate(100%);
 }
-.slide-out-nav label {
+.slide-out-nav nav {
   position: relative;
-  top: 0;
-  right: 0;
 }
-.slide-out-nav .close-button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+
+.show-slide-nav {
+  -webkit-transform: translate(0);
+          transform: translate(0);
 }
 
 .slide-menu {
@@ -426,7 +418,7 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  position: relative;
+  row-gap: 10px;
 }
 .slide-menu a {
   font-size: 1.6rem;
@@ -1098,6 +1090,9 @@ footer .copyright p {
 @media (max-width: 675px) {
   .nav-bar .wrapper {
     height: 80px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .nav-bar .wrapper .nav-links {
     height: 0;
@@ -1108,7 +1103,7 @@ footer .copyright p {
     left: 0;
     top: 0;
   }
-  .nav-bar .wrapper label {
+  .nav-bar .wrapper .menu-toggle {
     height: auto;
     overflow: visible;
   }

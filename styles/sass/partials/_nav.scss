@@ -32,24 +32,19 @@
             font-family: $body-font;
             letter-spacing: 1px;
         }
-    }
-    input[type=checkbox] {
-        opacity: 0;
-        position: absolute;
-        &:checked ~ .slide-out-nav {
-            right: 0;
-        }
-    }
-    label {
-        position: absolute;
-        right: 0;
-        color: $white-shade;
-        font-size: 1.5rem;
+    } 
+    .menu-toggle {
         height: 0;
         overflow: hidden;
-        &:hover {
-            cursor: pointer;
-        }
+    }
+    .toggle-look {
+        background: transparent;
+        border: none;
+        font-size: 1.5rem;
+        color: $white;
+        position: absolute;
+        right: 0;
+        cursor: pointer;
     }
     .logo {
         font-size: 2rem;
@@ -60,27 +55,25 @@
 // Slide Out Nav
 .slide-out-nav {
     background-color: $green-grey;
-    height: 100vh;
     position: fixed;
     top: 0;
-    right: -506px;
+    right: 0;
     width: 100%;
-    max-width: 506px;
+    max-width: 675px;
+    height: 100vh;
     padding: 35px 50px;
     transition: 0.75s;
-    label {
+    transform: translate(100%);
+    nav {
         position: relative;
-        top: 0;
-        right: 0;
     }
-    .close-button {
-        display: flex;
-        justify-content: flex-end;
-    }
+}
+.show-slide-nav {
+    transform: translate(0);
 }
 .slide-menu {
     flex-direction: column;
-    position: relative;
+    row-gap: 10px;
     a {
         font-size: 1.6rem;
         line-height: 2.5rem;

@@ -38,8 +38,6 @@ formEl.addEventListener('submit', function(event) {
     const date = event.timeStamp;
 
     if (comment) {
-        console.log(comment);
-
         // create article element
         const articleEl = document.createElement('article');
         articleEl.classList.add('comment-post');
@@ -48,12 +46,11 @@ formEl.addEventListener('submit', function(event) {
         div1.classList.add('comment-image');
         // create img element
         const imgEl = document.createElement('img');
-        console.log(imgEl);
         imgEl.src = "https://source.unsplash.com/random/80x80";
 
         const div2 = document.createElement('div');
         div2.classList.add('comment');
-        // create a p element
+        // create p element
         const paraDate = document.createElement('p');
 
         const paraComment = document.createElement('p');
